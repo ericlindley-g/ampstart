@@ -1,0 +1,100 @@
+{
+  "blog": {
+    "head-tag": {
+      "title": "The Ad Landing Page",
+      "canonical-path": "templates/alp.amp",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-form",
+        "amp-call-tracking"
+      ],
+      "css-path": "templates/alp/page.css"
+    },
+    "navbar": {
+      "name": "The Ad Landing Page",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "faq": {
+        "links": [
+          {
+            "link": {"url": "#", "text": "About Us"}
+          },
+          {
+            "link": {"url": "#", "text": "Services"}
+          }
+        ]
+      },
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"}
+        ]
+      }
+    },
+    "form": {
+      "title": "Contact us for a free consultation",
+      "method": "GET",
+      "action": "/",
+      "inputs": [
+        {
+          "input": {
+            "type": "Full name",
+            "value": "",
+            "placeholder": "Full name",
+            "id": "fullnameid",
+            "name": "fullnameid"
+          }
+        },
+        {
+          "input": {
+            "type": "State",
+            "value": "",
+            "placeholder": "State",
+            "id": "stateid",
+            "name": "stateid"
+          }
+        },
+        {
+          "input": {
+            "type": "phone",
+            "value": "",
+            "placeholder": "phone",
+            "id": "phoneid",
+            "name": "phoneid"
+          }
+        },
+        {
+          "input": {
+            "type": "email",
+            "value": "",
+            "placeholder": "Email",
+            "id": "emailid",
+            "name": "emailid"
+          }
+        },
+        {
+          "submit": {
+            "id": "submit",
+            "name": "submit",
+            "value": "SUBMIT",
+            "classes": "ampstart-btn-secondary"
+          }
+        }
+      ]
+    },
+    "social-follow": {
+      "links": [
+        {"twitter": "#"},
+        {"facebook": "#"}
+      ]
+    },
+
+    "footer": {
+      "social-follow": false,
+      "copyright": {
+        "text": "©2017 Company Name"
+      }
+    }
+  }
+}

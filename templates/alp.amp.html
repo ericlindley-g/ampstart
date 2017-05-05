@@ -1,0 +1,87 @@
+<!doctype html>
+
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+{{#blog}}
+<html ⚡>
+  {{> ../utils/amp-page-head.snip.html}}
+  <body>
+    {{> ../components/navbar/navbar.snip.html}}
+    <main id="content" role="main" class="">
+      <article class="recipe-article">
+        <header>
+          <h1 class="py3 center h2">Company Name</h1>
+          <amp-img src="../img/blog/spritzer.jpg" width="1280" height="853" layout="responsive" alt="The final spritzer"></amp-img>
+        </header>
+
+        <div class="ampstart-card max-width-1 pt2">
+        <h3 class="h4 bold center py3">Headline about law specialty</h3>
+        <p class="px3">Description of value prop. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Call now for a free consultation</p>
+        <!-- Start Button -->
+        <a><button class="ampstart-btn mt5 mb4 rounded {{classes}}"/>Request a consultation</button>
+        <!-- End Button -->
+        </div>
+
+        <div class="ampstart-card max-width-1 pt2 consult-form">
+        {{> ../components/form/form.snip.html}}
+        </div>
+
+        <div class="ampstart-card max-width-1 pt2 pb3 px1">
+          <h4 class="center bold h5">Accolades &amp; Testimonials</h4>
+          <ul>
+            <li>Award</li>
+            <li>Award</li>
+            <li>Award</li>
+          </ul>
+
+          
+          <p class="mt1">
+            "Testimonial. Morbi vulputate purus sodales dapibus ultrices.
+            Donec commodo condimentum enim, eget congue dui dapibus vel.
+            Pellentesque porttitor sit amet justo eu scelerisque."
+          </p>
+          <p class="right-align mb1">-Notable Client</p>
+
+        </div>
+
+        <p class="mb4 px2 center">Verified and secured by</p>
+        <amp-img class="center mb5" src="../img/blog/spritzer.jpg" width="80" height="80" layout="fixed" alt="Verifier name"></amp-img>
+
+        {{> ../components/social-follow/social-follow.snip.html}}
+
+        <section>
+          <h2 class="h6 mb3 center caps">Categories</h2>
+          <ul class="list-reset p0 center">
+            <li class="mb1">
+              <a href="#" class="text-decoration-none">About us</a>
+            </li>
+            <li class="mb1">
+              <a href="#" class="text-decoration-none">Services</a>
+            </li>
+            <li class="mb1">
+               <amp-call-tracking config="https://example.com/calltracking.json">
+                 <a class="text-decoration-none bold" href="tel:8005555555">Call now: (800)555-5555</a>
+               </amp-call-tracking>
+            </li>
+          </li> 
+        </section>
+      </article>
+    </main>
+    {{> ../components/footer/footer.snip.html}}
+  </body>
+</html>
+{{/blog}}
